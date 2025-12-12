@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手相鑑定 | Style 01</title>
+  <style>
+    :root {
+      font-family: 'Hiragino Sans', 'Noto Sans JP', 'Inter', system-ui, sans-serif;
+      color: #0f0b2f;
+      background: #f7f7fb;
+    }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 10% 20%, rgba(174, 207, 255, 0.35), transparent 35%),
+                  radial-gradient(circle at 80% 10%, rgba(255, 184, 210, 0.35), transparent 30%),
+                  #f7f7fb;
+      color: #232040;
+      min-height: 100vh;
+    }
+    header {
+      padding: clamp(1.8rem, 4vw, 3rem) clamp(1.4rem, 5vw, 4rem);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero-text h1 {
+      margin: 0 0 0.8rem;
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      letter-spacing: 0.04em;
+    }
+    .hero-text p {
+      margin: 0 0 1.2rem;
+      line-height: 1.7;
+      color: #4a4a6a;
+    }
+    .cta-group {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border: none;
+      border-radius: 14px;
+      padding: 0.95rem 1.4rem;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(96, 70, 191, 0.25);
+      transition: transform 0.15s ease, box-shadow 0.2s ease;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, #7b6cfa, #6ad0ff);
+      color: white;
+    }
+    .btn.secondary {
+      background: white;
+      color: #5c4db6;
+      border: 1px solid rgba(92, 77, 182, 0.2);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .hero-visual {
+      background: white;
+      border-radius: 24px;
+      padding: 1rem;
+      box-shadow: 0 24px 60px rgba(31, 33, 73, 0.12);
+    }
+    .hero-visual img {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+    }
+    .section {
+      padding: 0 clamp(1.4rem, 5vw, 4rem) 3rem;
+    }
+    .pill {
+      display: inline-flex;
+      gap: 0.4rem;
+      align-items: center;
+      background: rgba(92, 77, 182, 0.08);
+      color: #5c4db6;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .grid {
+      margin-top: 1.2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.1rem 1.2rem;
+      box-shadow: 0 18px 40px rgba(26, 22, 74, 0.08);
+      border: 1px solid rgba(26, 22, 74, 0.05);
+    }
+    .card h3 { margin: 0 0 0.4rem; }
+    .card p { margin: 0; color: #4a4a6a; line-height: 1.6; }
+    .steps {
+      margin-top: 2rem;
+      background: linear-gradient(145deg, rgba(124, 108, 250, 0.12), rgba(106, 208, 255, 0.08));
+      border-radius: 18px;
+      padding: 1.4rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .step {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      padding: 1rem;
+      border: 1px solid rgba(255,255,255,0.7);
+      box-shadow: 0 12px 30px rgba(17, 0, 74, 0.08);
+    }
+    .step strong { display: block; margin-bottom: 0.4rem; color: #5c4db6; }
+    footer {
+      padding: 2rem;
+      text-align: center;
+      color: #6a6a88;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-text">
+      <span class="pill">手相鑑定</span>
+      <h1>あなたの手のひらから未来を読む、オーダーメイド鑑定</h1>
+      <p>オンラインで完結する鑑定体験。画像とヒアリングを基に、強み・転機・開運アクションをお届けします。シンプルで迷わない導線に整えました。</p>
+      <div class="cta-group">
+        <button class="btn primary">無料で相談する</button>
+        <button class="btn secondary">鑑定フローを見る</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img data-kansei-img alt="手相鑑定のイメージ" />
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="pill">Feature</div>
+    <div class="grid">
+      <div class="card">
+        <h3>1日3名限定の丁寧な診断</h3>
+        <p>鑑定士がゆっくり読み解くため、質を優先。フィードバックは48時間以内にお返しします。</p>
+      </div>
+      <div class="card">
+        <h3>写真・動画でわかりやすく</h3>
+        <p>手の撮影ガイドと動画コメントで、解説を視覚的に理解。開運アクションもすぐ実践できます。</p>
+      </div>
+      <div class="card">
+        <h3>定期リビジョン付き</h3>
+        <p>半年後に無料で再チェック。変化の兆しを確認し、次のステップをご案内します。</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <strong>Step 1</strong>
+        撮影ガイドに沿って手のひらを撮影。フォームでご相談内容を共有してください。
+      </div>
+      <div class="step">
+        <strong>Step 2</strong>
+        鑑定士が主要線と丘を読み解き、テーマ別にレポート化。動画コメントもセット。
+      </div>
+      <div class="step">
+        <strong>Step 3</strong>
+        PDFと動画を受け取り、必要ならオンライン面談でフォローアップ。半年後に無料リビジョン。
+      </div>
+    </div>
+  </section>
+
+  <footer>画像: 内包データURI (元 /assets/kansei.jpg) | Style 01</footer>
+
+  <script src="assets/image-data.js"></script>
+</body>
+</html>

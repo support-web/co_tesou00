@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手相鑑定 | Style 04</title>
+  <style>
+    :root { font-family: 'Noto Sans JP', 'Inter', system-ui, sans-serif; background: #fdfcfb; color: #141414; }
+    body { margin: 0; color: #141414; background: #fdfcfb; }
+    header { padding: clamp(1.6rem, 5vw, 3rem); text-align: center; }
+    h1 { margin: 0; font-size: clamp(2.2rem, 4vw, 3rem); letter-spacing: 0.06em; }
+    p.lead { margin: 0.5rem auto 0; max-width: 720px; line-height: 1.8; color: #3b3b3b; }
+    .hero { margin: 1.6rem auto; max-width: 860px; }
+    .hero img { width: 100%; border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+    main { max-width: 960px; margin: 0 auto; padding: 0 clamp(1.2rem, 4vw, 3rem) 3rem; display: grid; gap: 1.6rem; }
+    .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; align-items: start; }
+    .block { padding: 1.1rem 1.2rem; border: 1px solid #e5e5e5; border-radius: 14px; background: white; }
+    .block h2 { margin-top: 0; font-size: 1.15rem; letter-spacing: 0.02em; }
+    .block p { margin: 0; color: #383838; line-height: 1.6; }
+    ul { padding-left: 1.2rem; margin: 0.6rem 0 0; color: #444; line-height: 1.6; }
+    footer { text-align: center; padding: 2rem; color: #6a6a6a; font-size: 0.95rem; }
+    a.button { display: inline-block; margin-top: 0.8rem; padding: 0.8rem 1.1rem; border-radius: 12px; border: 1px solid #141414; color: #141414; text-decoration: none; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>シンプルに、まっすぐ届く手相鑑定</h1>
+    <p class="lead">余白を活かした一枚構成。最低限の情報で信頼と流れだけを提示し、迷わずお問い合わせに進めます。</p>
+    <div class="hero">
+      <img data-kansei-img alt="手相鑑定のイメージ" />
+    </div>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="block">
+        <h2>提供内容</h2>
+        <p>主要線の診断・性格傾向・タイミング予測・開運アクションを1枚のレポートに凝縮。音声補足付き。</p>
+      </div>
+      <div class="block">
+        <h2>料金</h2>
+        <p>通常 12,000円 / 1件</p>
+        <ul>
+          <li>追加質問 0円（回数制限なし）</li>
+          <li>半年後のリチェック 0円</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="block">
+        <h2>流れ</h2>
+        <ul>
+          <li>申込・撮影ガイド送付</li>
+          <li>写真提出（スマホOK）</li>
+          <li>48時間以内にレポート送付</li>
+          <li>必要ならオンラインで補足</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>スタンス</h2>
+        <p>不安を煽らず、事実と可能性を淡々とお伝えします。判断はあなた自身ができるように。</p>
+        <a class="button" href="#">申し込む</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>画像: 内包データURI (元 /assets/kansei.jpg) | Style 04</footer>
+
+  <script src="assets/image-data.js"></script>
+</body>
+</html>

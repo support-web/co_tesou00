@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手相鑑定サイト サンプル集</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: 'Hiragino Sans', 'Noto Sans JP', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d0b1f;
+      color: #f6f4ff;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2.5rem clamp(1.5rem, 4vw, 3rem) 3rem;
+      background: radial-gradient(circle at 20% 20%, rgba(163,131,255,0.2), transparent 35%),
+                  radial-gradient(circle at 80% 10%, rgba(122,229,255,0.18), transparent 32%),
+                  #0d0b1f;
+    }
+    header {
+      text-align: center;
+      max-width: 760px;
+    }
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      letter-spacing: 0.08em;
+      margin: 0 0 0.5rem;
+    }
+    p.lead {
+      margin: 0;
+      color: #d8d2ff;
+      line-height: 1.7;
+    }
+    .grid {
+      width: min(1100px, 100%);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    a.card {
+      text-decoration: none;
+      padding: 1.2rem 1.3rem;
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      color: inherit;
+    }
+    a.card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.16);
+      box-shadow: 0 25px 60px rgba(67, 193, 255, 0.18);
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+    }
+    .card p {
+      margin: 0;
+      color: #c9c6e8;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    footer {
+      color: #8f8aac;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>手相鑑定サイト 4パターン</h1>
+    <p class="lead">/assets/kansei.jpg をもとにした画像をデータURIとして内包し、レイアウト・雰囲気が異なる4つのサンプルページを用意しました。気に入ったデザインをベースに調整してください。</p>
+  </header>
+  <section class="grid">
+    <a class="card" href="style1.html">
+      <h2>Style 01: 余白重視のモダンランディング</h2>
+      <p>グラデーションと丸みを生かした明るいトーン。CTAに導くヒーロー構成。</p>
+    </a>
+    <a class="card" href="style2.html">
+      <h2>Style 02: 漆黒の神秘カード</h2>
+      <p>ダークテーマで奥行きを演出。カード型セクションで鑑定ポイントを整理。</p>
+    </a>
+    <a class="card" href="style3.html">
+      <h2>Style 03: 柔らかパステルのLP</h2>
+      <p>丸みと淡色を活かした親しみやすいLP。流れを追いやすい3ステップ。</p>
+    </a>
+    <a class="card" href="style4.html">
+      <h2>Style 04: ミニマル一枚ページ</h2>
+      <p>タイポグラフィ中心のクリーンな構成。要素を厳選しメッセージを強調。</p>
+    </a>
+  </section>
+  <footer>画像: 内包データURI (元 /assets/kansei.jpg)</footer>
+</body>
+</html>
