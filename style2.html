@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手相鑑定 | Style 02</title>
+  <style>
+    :root { font-family: 'Noto Sans JP', 'Inter', system-ui, sans-serif; background: #05060b; color: #e7e8ec; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 20% 20%, rgba(125, 96, 255, 0.16), transparent 30%),
+                  radial-gradient(circle at 80% 0%, rgba(71, 195, 255, 0.18), transparent 36%),
+                  #05060b;
+      color: #e7e8ec;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem); }
+    header { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.6rem; align-items: center; }
+    .hero img { width: 100%; border-radius: 22px; box-shadow: 0 30px 80px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.06); }
+    .kicker { color: #7dd7ff; letter-spacing: 0.12em; font-size: 0.85rem; text-transform: uppercase; }
+    h1 { font-size: clamp(2.2rem, 4vw, 3rem); margin: 0.4rem 0; }
+    p.lead { color: #bac2d6; line-height: 1.8; margin: 0 0 1.4rem; }
+    .cta { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+    .cta a { padding: 0.9rem 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 700; }
+    .cta .primary { background: linear-gradient(135deg, #a97bff, #62d2ff); color: #05060b; box-shadow: 0 16px 40px rgba(101, 139, 255, 0.35); }
+    .cta .ghost { color: #d1d6e4; border: 1px solid rgba(255,255,255,0.16); }
+    section { margin-top: 2rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .card { background: rgba(18, 19, 31, 0.7); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 1.1rem; box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
+    .card h3 { margin: 0 0 0.3rem; }
+    .card p { margin: 0; color: #b5bed3; line-height: 1.6; }
+    .badge { display: inline-block; padding: 0.3rem 0.6rem; border-radius: 999px; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.12); color: #a8b3d5; margin-bottom: 0.4rem; }
+    .timeline { margin-top: 1.5rem; border-left: 2px solid rgba(255,255,255,0.16); padding-left: 1.2rem; display: grid; gap: 1rem; }
+    .timeline-item { position: relative; }
+    .timeline-item::before { content: ''; position: absolute; left: -1.55rem; top: 0.35rem; width: 0.9rem; height: 0.9rem; border-radius: 999px; background: linear-gradient(135deg, #a97bff, #62d2ff); box-shadow: 0 0 0 6px rgba(255,255,255,0.06); }
+    footer { margin: 2.5rem 0 1rem; text-align: center; color: #8f97b3; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="kicker">Mystic Reading</div>
+        <h1>漆黒に光る手相鑑定。あなたの可能性を深く掘り下げます。</h1>
+        <p class="lead">ハイライトを絞り、静かな奥行きを意識したダークトーン。主要線の診断に加え、才能や課題をカード型で整理しました。</p>
+        <div class="cta">
+          <a class="primary" href="#">依頼する</a>
+          <a class="ghost" href="#">サンプルレポートを見る</a>
+        </div>
+      </div>
+      <div class="hero">
+        <img data-kansei-img alt="手相鑑定のイメージ" />
+      </div>
+    </header>
+
+    <section>
+      <div class="cards">
+        <div class="card">
+          <div class="badge">Personal</div>
+          <h3>恋愛・結婚のタイミング</h3>
+          <p>感情線と金星丘を中心に、出会いの兆しと距離感の保ち方を助言します。</p>
+        </div>
+        <div class="card">
+          <div class="badge">Career</div>
+          <h3>仕事運の跳ね上がり</h3>
+          <p>知能線×太陽線から、成果が伸びる時期と役割を提示。転職のベストタイミングを明記。</p>
+        </div>
+        <div class="card">
+          <div class="badge">Life</div>
+          <h3>健康とリズム</h3>
+          <p>生命線・月丘の潤いをチェックし、疲れやすい時期の対策と生活リズムを整えます。</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Day 0 — 申込＆撮影ガイド</h3>
+          <p class="lead">フォーム入力後すぐに撮影テンプレートをお届け。スマホ1台でOK。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Day 2 — 解析＆レポート</h3>
+          <p class="lead">線の状態・丘の厚み・指の長さバランスを観察し、優先順位を3つにまとめます。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Day 3 — Zoomフォロー</h3>
+          <p class="lead">結果の深掘りとQ&A。録画データも共有し、次の一手を一緒に決めます。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>画像: 内包データURI (元 /assets/kansei.jpg) | Style 02</footer>
+
+    <script src="assets/image-data.js"></script>
+  </div>
+</body>
+</html>

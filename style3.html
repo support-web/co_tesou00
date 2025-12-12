@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手相鑑定 | Style 03</title>
+  <style>
+    :root { font-family: 'Noto Sans JP', 'Rounded Mplus 1c', system-ui, sans-serif; background: #fff9f5; color: #3c2f2f; }
+    body { margin: 0; background: linear-gradient(180deg, #fff7f1 0%, #f9fcff 60%, #f3f6ff 100%); color: #3c2f2f; }
+    header { padding: clamp(1.6rem, 4vw, 3rem); text-align: center; }
+    .bubble { display: inline-block; background: #ffe5d3; color: #d16b2f; padding: 0.5rem 0.9rem; border-radius: 999px; font-weight: 700; letter-spacing: 0.03em; }
+    h1 { margin: 0.7rem 0 0.4rem; font-size: clamp(2.1rem, 4vw, 3rem); }
+    p.lead { margin: 0; color: #5b4a4a; line-height: 1.8; }
+    .hero {
+      margin: 1.4rem auto;
+      max-width: 960px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(218, 161, 118, 0.2);
+      border: 6px solid #fff5ec;
+    }
+    .hero img { display: block; width: 100%; }
+    .content { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.4rem, 4vw, 3rem) 3rem; display: grid; gap: 1.4rem; }
+    .panel {
+      background: white;
+      border-radius: 18px;
+      padding: 1.4rem;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+    .panel h2 { margin-top: 0; }
+    .pills { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+    .pill { background: #eef5ff; color: #4b5ea8; padding: 0.4rem 0.7rem; border-radius: 12px; font-weight: 700; font-size: 0.9rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-top: 0.8rem; }
+    .step { background: #f7f9ff; border-radius: 12px; padding: 0.9rem; border: 1px solid #e3e9ff; }
+    .step strong { display: block; color: #4b5ea8; margin-bottom: 0.3rem; }
+    .cta { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; align-items: center; }
+    .cta button { border: none; padding: 1rem 1.2rem; border-radius: 12px; font-weight: 800; font-size: 1rem; cursor: pointer; }
+    .cta .primary { background: linear-gradient(135deg, #ff9e63, #ffd178); color: #3c2f2f; box-shadow: 0 14px 30px rgba(255, 158, 99, 0.25); }
+    .cta .link { background: white; color: #4b5ea8; border: 2px solid #dce4ff; }
+    footer { text-align: center; padding: 2rem; color: #7a6d6d; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bubble">やさしい鑑定</div>
+    <h1>ふわっと包み込む手相鑑定で、未来の準備をはじめよう</h1>
+    <p class="lead">淡いパステルで安心感を演出。3ステップで依頼できるシンプルな導線にしました。鑑定結果は可愛いPDFと音声コメント付き。</p>
+    <div class="hero">
+      <img data-kansei-img alt="手相鑑定のイメージ" />
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="panel">
+      <h2>こんな方におすすめ</h2>
+      <div class="pills">
+        <span class="pill">これからの働き方</span>
+        <span class="pill">恋の進め方</span>
+        <span class="pill">転機の準備</span>
+        <span class="pill">開運アクション</span>
+      </div>
+      <p>手の線だけでなく、指のバランスや手の厚みからあなたの強みと課題をやさしくお伝え。安心して次の一歩を踏み出せるよう、無理のない開運アクションを添えています。</p>
+    </div>
+
+    <div class="panel">
+      <h2>依頼の流れ</h2>
+      <div class="steps">
+        <div class="step"><strong>Step 1</strong>LINEまたはフォームで申し込み。撮影ガイドをすぐお届け。</div>
+        <div class="step"><strong>Step 2</strong>手の写真を送付。必要に応じて音声でお悩みをシェア。</div>
+        <div class="step"><strong>Step 3</strong>48時間以内にPDF＋音声コメントでフィードバック。</div>
+        <div class="step"><strong>Step 4</strong>必要ならビデオ通話でフォローアップ。追加料金なし。</div>
+      </div>
+    </div>
+
+    <div class="panel cta">
+      <div>
+        <h2>今だけ初回20%OFF</h2>
+        <p>先着10名さま限定で、通常価格から20%オフ。家族・友人とのペア鑑定もOKです。</p>
+      </div>
+      <div style="display:flex; gap:0.6rem; justify-content:flex-end; flex-wrap:wrap;">
+        <button class="primary">クーポンを使って申し込む</button>
+        <button class="link">サンプルを確認</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>画像: 内包データURI (元 /assets/kansei.jpg) | Style 03</footer>
+
+  <script src="assets/image-data.js"></script>
+</body>
+</html>
